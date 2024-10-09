@@ -1,0 +1,166 @@
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 364px;
+}
+
+.companyCardContainer {
+    width: 100%;
+    top: 25%;
+    position: absolute;
+}
+
+.card {
+    align-self: flex-end;
+    padding: 2.5rem 1.5rem;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 7%;
+    margin-bottom: 4rem;
+}
+
+.generalInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.jobMainInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.jobInformation {
+    width: 9.37rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #6e8098;
+}
+
+.publicationTime {
+    width: 3.85rem;
+}
+
+.jobModeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5.25rem;
+}
+
+.jobTitle {
+    font-size: 20px;
+}
+
+.jobLocation {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5964e0;
+}
+
+.cardButton {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.jobDescription {
+    display: flex;
+    margin-top: 2rem;
+    color: #6e8098;
+    line-height: 26px;
+}
+
+.jobDescription.dark-mode {
+    color: #9daec2;
+}
+
+.requirementsSection {
+    margin-top: 66px;
+}
+
+.mainRequirementsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.jobRequirements {
+    display: flex;
+    color: #6e8098;
+    line-height: 26px;
+}
+
+.requirementsList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    list-style: none;
+    color: #6e8098;
+    gap: 0.5rem;
+}
+
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.listItemPoint {
+    padding-top: 10px;
+}
+
+.assignmentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+.mainAssignmentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.numberList {
+    font-weight: bold;
+    padding-top: 4px;
+    color: #5964e0;
+    min-width: 11px;
+    font-size: 1rem;
+}
+
+.applyButtonContainer {
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 24px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.dark-mode {
+    background-color: #19202d;
+}
+
+@media (width >=530px) {
+    .card {
+        margin-top: 0;
+    }
+
+    .headerContainer {
+        height: 292px;
+    }
+
+    .companyCardContainer {
+        width: 100%;
+        top: 40%;
+    }
+}

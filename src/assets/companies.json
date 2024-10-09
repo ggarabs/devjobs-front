@@ -1,0 +1,88 @@
+{
+    "companies": [
+        {
+            "id": 0,
+            "name": "Scoot",
+            "website": "scoot.com",
+            "imagePath": "/logos/scootLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 1,
+            "name": "Typemaster",
+            "website": "typingmaster.com",
+            "imagePath": "/logos/typemasterLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 2,
+            "name": "Crowdfund",
+            "website": "crowdfunding.com",
+            "imagePath": "/logos/crowdfundLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 3,
+            "name": "Mastercraft",
+            "website": "mastercraft.com/",
+            "imagePath": "/logos/mastercraftLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 4,
+            "name": "Cofferoasters",
+            "website": "fabricacoffeeroasters.com",
+            "imagePath": "/logos/cofferoastersLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 5,
+            "name": "Blogr",
+            "website": "blogger.com",
+            "imagePath": "/logos/blogrLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 6,
+            "name": "Vector",
+            "website": "login.vectorapp.com.br/login",
+            "imagePath": "/logos/vectorLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 7,
+            "name": "Office Lite",
+            "website": "github.com/WhatTheBlock/Office-Lite",
+            "imagePath": "/logos/officeLiteLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 2,
+            "name": "Crowdfund",
+            "website": "crowdfunding.com",
+            "imagePath": "/logos/crowdfundLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 3,
+            "name": "Mastercraft",
+            "website": "mastercraft.com/",
+            "imagePath": "/logos/mastercraftLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 4,
+            "name": "Cofferoasters",
+            "website": "fabricacoffeeroasters.com",
+            "imagePath": "/logos/cofferoastersLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        },
+        {
+            "id": 5,
+            "name": "Blogr",
+            "website": "blogger.com",
+            "imagePath": "/logos/blogrLogo.png",
+            "largeImagePath": "/scootLogo.png"
+        }
+    ]
+}

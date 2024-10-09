@@ -1,0 +1,56 @@
+.header {
+    background-color: #5964E0;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.5rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.triangle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.triangle2 {
+    position: absolute;
+    left: 255px;
+    top: 0;
+}
+
+.triangle3 {
+    position: absolute;
+    left: 830px;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    width: 88.5vw;
+    justify-content: space-between;
+    margin-top: -2.8rem;
+}
+
+.themeSwitcher {
+    display: flex;
+    align-self: center;
+}
+
+@media (width > 700px) {
+    .header {
+        border-bottom-left-radius: 6.25rem;
+        height: 10rem;
+    }
+}
+
+@media (width > 1000px) {
+    .container {
+        width: 77vw;
+        max-width: 70rem;
+    }
+}

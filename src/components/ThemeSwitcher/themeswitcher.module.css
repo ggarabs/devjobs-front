@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 112px;
+    height: 24px;
+}
+
+.img {
+    height: auto;
+    max-width: 100%;
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.rectangleImg {
+    height: 100%;
+    width: 100%;
+}
+
+.blueCircle {
+    position: absolute;
+    left: 4px;
+    transition: transform 400ms ease;
+    transform: translateX(0);
+}
+
+.dark-mode {
+    transform: translateX(26px);
+}

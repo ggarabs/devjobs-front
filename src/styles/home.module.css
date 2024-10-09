@@ -1,0 +1,59 @@
+.homePageComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 62px;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+.searchBox {
+    top: 70%;
+    position: absolute;
+}
+
+.contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+    gap: 11px;
+}
+
+.buttonContainer {
+    height: 142px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+}
+
+@media (width > 660px) {
+    .homePageComponent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchBox {
+        top: 74.5%;
+    }
+
+    .contentContainer {
+        width: 88.5vw;
+    }
+}
+
+@media (width > 1000px) {
+    .contentContainer {
+        width: 77vw;
+        max-width: 70rem;
+        gap: 30px;
+    }
+}

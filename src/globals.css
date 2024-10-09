@@ -1,0 +1,41 @@
+/* src/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body.light-mode {
+    background-color: #f4f6f8;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #121721;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

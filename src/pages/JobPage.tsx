@@ -3,15 +3,19 @@ import LargeButton from "../components/LargeButton/LargeButton";
 import styles from "./../styles/jobpage.module.css";
 import CompanyCard from "../components/CompanyCard/CompanyCard";
 import companies from "./../assets/companies.json";
-import jobs from "./../assets/jobs.json";
 import { useParams } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext";
+import useJobData from "../hooks/useJobData";
 
 const JobPage: React.FC = () => {
     const { theme } = useTheme();
+    const { jobs } = useJobData();
     const { jobId } = useParams();
 
-    const currJob = jobs?.jobs?.find((job) => job.id === parseInt(jobId || ""));
+    if (!Array.isArray(jobs)) throw new Error("Deu merda");
+    if (!jobId) throw new Error("Deu mais merda ainda");
+
+    const currJob = jobs[+jobId];
 
     const {
         company: companyName,
@@ -20,10 +24,7 @@ const JobPage: React.FC = () => {
         title,
         location,
         description,
-        generalRequirements,
-        requirements,
-        generalAssignments,
-        assignments,
+        generalRequirements
     } = currJob || {};
 
     const company = companies?.companies?.find(
@@ -80,7 +81,7 @@ const JobPage: React.FC = () => {
                         </p>
                     </div>
                     <ul className={styles.requirementsList}>
-                        {requirements?.map((requirement, index) => (
+                        {/* {requirements?.map((requirement, index) => (
                             <li
                                 key={index.toString()}
                                 className={styles.listItem}
@@ -95,7 +96,7 @@ const JobPage: React.FC = () => {
                                     {requirement.description}
                                 </p>
                             </li>
-                        ))}
+                        ))} */}
                     </ul>
                 </div>
                 <div className={styles.assignmentsContainer}>
@@ -104,11 +105,11 @@ const JobPage: React.FC = () => {
                         <p
                             className={`${styles.jobRequirements} ${themeClass}`}
                         >
-                            {generalAssignments}
+                            {/* {generalAssignments} */}
                         </p>
                     </div>
                     <ol className={styles.assignmentsList}>
-                        {assignments?.map((assignment, index) => (
+                        {/* {assignments?.map((assignment, index) => (
                             <li
                                 key={index.toString()}
                                 className={styles.listItem}
@@ -122,7 +123,7 @@ const JobPage: React.FC = () => {
                                     {assignment.description}
                                 </p>
                             </li>
-                        ))}
+                        ))} */}
                     </ol>
                 </div>
             </main>

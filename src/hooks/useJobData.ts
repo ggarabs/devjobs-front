@@ -17,7 +17,6 @@ const useJobData = () => {
     });
 
     return { ...query, jobs: query.data?.data }
-
 }
 
 export default useJobData;

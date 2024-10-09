@@ -18,10 +18,10 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.contentContainer}>
                 {jobs?.map((job, index) => {
-                    const { id, imagePath, publicationTime, mode, title, company, location } = job
+                    const { imagePath, publicationTime, mode, title, company, location } = job
                     return (
                         <JobCard
-                            id={id}
+                            id={index}
                             key={index}
                             imagePath={imagePath}
                             publicationTime={publicationTime || ""}

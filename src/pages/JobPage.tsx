@@ -9,8 +9,15 @@ import useJobData from "../hooks/useJobData";
 
 const JobPage: React.FC = () => {
     const { theme } = useTheme();
-    const { jobs } = useJobData();
+    const { jobs, isLoading } = useJobData();
     const { jobId } = useParams();
+
+    console.log(jobs)
+
+    if (isLoading) {
+        console.log("Carregando");
+        return <h1>TÁ CARREGANDO AINDA</h1>
+    }
 
     if (!Array.isArray(jobs)) throw new Error("Deu merda");
     if (!jobId) throw new Error("Deu mais merda ainda");

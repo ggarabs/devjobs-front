@@ -3,7 +3,7 @@ export interface JobData {
     mode: string,
     title: string,
     company: string,
-    location: string,
+    country: string,
     description: string,
     generalRequirements: string,
     generalAssignments: string,

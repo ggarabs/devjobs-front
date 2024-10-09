@@ -29,7 +29,7 @@ const JobPage: React.FC = () => {
         company: companyName,
         mode,
         title,
-        location,
+        country,
         description,
         generalRequirements,
         generalAssignments,
@@ -70,7 +70,7 @@ const JobPage: React.FC = () => {
                                 </div>
                             </div>
                             <h2 className={styles.jobTitle}>{title}</h2>
-                            <p className={styles.jobLocation}>{location}</p>
+                            <p className={styles.jobLocation}>{country}</p>
                         </div>
                         <div className={styles.cardButton}>
                             <LargeButton text="Apply Now" />

@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.contentContainer}>
                 {jobs?.map((job, index) => {
-                    const { imagePath, mode, title, company, location, creationDate } = job
+                    const { imagePath, mode, title, company, country, creationDate } = job
                     return (
                         <JobCard
                             id={index}
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                             mode={mode}
                             title={title}
                             company={company}
-                            location={location}
+                            location={country}
                             creationDate={new Date(creationDate)}
                         />
                     )

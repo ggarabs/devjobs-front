@@ -6,6 +6,7 @@ import companies from "./../assets/companies.json";
 import { useParams } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext";
 import useJobData from "../hooks/useJobData";
+import getTimeAgo from "../utils/TimeService";
 
 const JobPage: React.FC = () => {
     const { theme } = useTheme();
@@ -26,12 +27,13 @@ const JobPage: React.FC = () => {
 
     const {
         company: companyName,
-        publicationTime,
         mode,
         title,
         location,
         description,
-        generalRequirements
+        generalRequirements,
+        generalAssignments,
+        creationDate
     } = currJob || {};
 
     const company = companies?.companies?.find(
@@ -60,7 +62,7 @@ const JobPage: React.FC = () => {
                         <div className={styles.jobMainInformation}>
                             <div className={styles.jobInformation}>
                                 <p className={styles.publicationTime}>
-                                    {publicationTime}
+                                    {getTimeAgo(new Date(creationDate))}
                                 </p>
                                 <div className={styles.jobModeContainer}>
                                     <img src="/littleBallChar.png" />
@@ -112,7 +114,7 @@ const JobPage: React.FC = () => {
                         <p
                             className={`${styles.jobRequirements} ${themeClass}`}
                         >
-                            {/* {generalAssignments} */}
+                            {generalAssignments}
                         </p>
                     </div>
                     <ol className={styles.assignmentsList}>

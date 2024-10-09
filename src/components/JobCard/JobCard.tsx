@@ -1,18 +1,19 @@
 import styles from "./jobcard.module.css"
 import { useTheme } from "../../contexts/ThemeContext"
 import { Link } from "react-router-dom"
+import getTimeAgo from "../../utils/TimeService"
 
 interface JobCardProps {
     id: number,
     imagePath: string,
-    publicationTime: string,
     mode: string,
     title: string,
     company: string,
-    location: string
+    location: string,
+    creationDate: Date
 }
 
-const JobCard = ({ id, imagePath, publicationTime, mode, title, company, location }: JobCardProps) => {
+const JobCard = ({ id, imagePath, mode, title, company, location, creationDate }: JobCardProps) => {
     const { theme } = useTheme()
 
     const themeClass = styles[`${theme}-mode`] as keyof typeof styles
@@ -23,7 +24,7 @@ const JobCard = ({ id, imagePath, publicationTime, mode, title, company, locatio
             <Link to={`/jobs/${id}`} className={`${styles.card} ${themeClass}`}>
                 <div className={styles.jobMainInformation}>
                     <div className={styles.jobInformation}>
-                        <p className={styles.jobTime}>{publicationTime}</p>
+                        <p className={styles.jobTime}>{getTimeAgo(creationDate)}</p>
                         <div className={styles.jobModeContainer}>
                             <img src="/littleBallChar.png" />
                             <p className={styles.jobMode}>{mode}</p>

@@ -2,20 +2,19 @@ import Header from "../components/Header/Header";
 import LargeButton from "../components/LargeButton/LargeButton";
 import styles from "./../styles/jobpage.module.css";
 import CompanyCard from "../components/CompanyCard/CompanyCard";
-import companies from "./../assets/companies.json";
 import { useParams } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext";
 import useJobData from "../hooks/useJobData";
 import getTimeAgo from "../utils/TimeService";
+import useCompanyData from "../hooks/useCompanyData";
 
 const JobPage: React.FC = () => {
     const { theme } = useTheme();
-    const { jobs, isLoading } = useJobData();
+    const { jobs, isLoading: jobsLoading } = useJobData();
+    const { companies, isLoading: companiesLoading } = useCompanyData();
     const { jobId } = useParams();
 
-    console.log(jobs)
-
-    if (isLoading) {
+    if (jobsLoading || companiesLoading) {
         console.log("Carregando");
         return <h1>TÁ CARREGANDO AINDA</h1>
     }
@@ -26,19 +25,17 @@ const JobPage: React.FC = () => {
     const currJob = jobs[+jobId];
 
     const {
-        company: companyName,
         mode,
         title,
         country,
         description,
         generalRequirements,
         generalAssignments,
+        company: companyId,
         creationDate
     } = currJob || {};
 
-    const company = companies?.companies?.find(
-        (company) => company.name === companyName
-    );
+    const company = companies?.find(company => company.id === companyId);
     const { name, website, imagePath, largeImagePath } = company || {};
 
     const themeClass = styles[`${theme}-mode`] as keyof typeof styles;

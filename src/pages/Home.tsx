@@ -4,12 +4,9 @@ import JobCard from '../components/JobCard/JobCard'
 import Button from '../components/Button/Button'
 import styles from './../styles/home.module.css'
 import useJobData from '../hooks/useJobData'
-import useCompanyData from '../hooks/useCompanyData'
 
 const Home: React.FC = () => {
-    const { jobs } = useJobData();
-
-    const { companies, isLoading } = useCompanyData();
+    const { jobs, isLoading } = useJobData();
 
     if (isLoading) {
         console.log("Carregando");
@@ -26,12 +23,9 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.contentContainer}>
                 {jobs?.map((job, index) => {
-                    const { mode, title, country, creationDate, company: companyId } = job
-                    const companyDetails = companies?.find(comp => comp.id === companyId);
+                    const { mode, title, country, creationDate } = job
+                    const { name, imagePath } = job.company
 
-                    if (!companyDetails) throw new Error("Deu ruim");
-
-                    const { imagePath, name } = companyDetails
                     return (
                         <JobCard
                             id={index}

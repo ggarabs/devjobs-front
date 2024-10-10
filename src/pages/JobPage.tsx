@@ -6,15 +6,13 @@ import { useParams } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext";
 import useJobData from "../hooks/useJobData";
 import getTimeAgo from "../utils/TimeService";
-import useCompanyData from "../hooks/useCompanyData";
 
 const JobPage: React.FC = () => {
     const { theme } = useTheme();
-    const { jobs, isLoading: jobsLoading } = useJobData();
-    const { companies, isLoading: companiesLoading } = useCompanyData();
+    const { jobs, isLoading } = useJobData();
     const { jobId } = useParams();
 
-    if (jobsLoading || companiesLoading) {
+    if (isLoading) {
         console.log("Carregando");
         return <h1>TÁ CARREGANDO AINDA</h1>
     }
@@ -31,12 +29,10 @@ const JobPage: React.FC = () => {
         description,
         generalRequirements,
         generalAssignments,
-        company: companyId,
         creationDate
     } = currJob || {};
 
-    const company = companies?.find(company => company.id === companyId);
-    const { name, website, imagePath, largeImagePath } = company || {};
+    const { name, website, imagePath, largeImagePath } = currJob.company || {};
 
     const themeClass = styles[`${theme}-mode`] as keyof typeof styles;
 

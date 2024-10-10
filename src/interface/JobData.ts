@@ -5,6 +5,11 @@ export interface JobData {
     description: string,
     generalRequirements: string,
     generalAssignments: string,
-    company: string,
+    company: {
+        name: string,
+        website: string,
+        imagePath: string,
+        largeImagePath: string
+    },
     creationDate: string
 }

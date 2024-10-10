@@ -26,9 +26,10 @@ const JobPage: React.FC = () => {
         mode,
         title,
         country,
-        description,
+        jobDescription,
         generalRequirements,
         generalAssignments,
+        requirements,
         creationDate
     } = currJob || {};
 
@@ -71,7 +72,7 @@ const JobPage: React.FC = () => {
                     </div>
                 </div>
                 <div className={`${styles.jobDescription} ${themeClass}`}>
-                    <p>{description}</p>
+                    <p>{jobDescription}</p>
                 </div>
                 <div className={styles.requirementsSection}>
                     <div className={styles.mainRequirementsContainer}>
@@ -82,24 +83,26 @@ const JobPage: React.FC = () => {
                             {generalRequirements}
                         </p>
                     </div>
-                    <ul className={styles.requirementsList}>
-                        {/* {requirements?.map((requirement, index) => (
-                            <li
-                                key={index.toString()}
-                                className={styles.listItem}
-                            >
-                                <img
-                                    src="/oval.png"
-                                    className={styles.listItemPoint}
-                                />
-                                <p
-                                    className={`${styles.jobRequirements} ${themeClass}`}
+                    {requirements ?
+                        <ul className={styles.requirementsList}>
+                            {requirements?.map((requirement, index) => (
+                                <li
+                                    key={index.toString()}
+                                    className={styles.listItem}
                                 >
-                                    {requirement.description}
-                                </p>
-                            </li>
-                        ))} */}
-                    </ul>
+                                    <img
+                                        src="/oval.png"
+                                        className={styles.listItemPoint}
+                                    />
+                                    <p
+                                        className={`${styles.jobRequirements} ${themeClass}`}
+                                    >
+                                        {requirement.description}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
+                        : <></>}
                 </div>
                 <div className={styles.assignmentsContainer}>
                     <div className={styles.mainAssignmentsContainer}>

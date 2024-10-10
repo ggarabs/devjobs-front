@@ -2,7 +2,7 @@ export interface JobData {
     mode: string,
     title: string,
     country: string,
-    description: string,
+    jobDescription: string,
     generalRequirements: string,
     generalAssignments: string,
     company: {
@@ -11,5 +11,8 @@ export interface JobData {
         imagePath: string,
         largeImagePath: string
     },
+    requirements: [{
+        description: string
+    }],
     creationDate: string
 }

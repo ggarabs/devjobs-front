@@ -139,7 +139,7 @@ const JobPage: React.FC = () => {
                     <div
                         className={`${styles.footerJobDescription} ${themeClass}`}
                     >
-                        <h2>{title}</h2>
+                        <h2 className={`${styles.footerJobTitle} ${themeClass}`}>{title}</h2>
                         <p
                             className={`${styles.footerCompanyName} ${themeClass}`}
                         >

@@ -14,5 +14,9 @@ export interface JobData {
     requirements: [{
         description: string
     }],
+    assignments: [{
+        description: string
+    }
+    ]
     creationDate: string
 }

@@ -30,6 +30,7 @@ const JobPage: React.FC = () => {
         generalRequirements,
         generalAssignments,
         requirements,
+        assignments,
         creationDate
     } = currJob || {};
 
@@ -113,23 +114,24 @@ const JobPage: React.FC = () => {
                             {generalAssignments}
                         </p>
                     </div>
-                    <ol className={styles.assignmentsList}>
-                        {/* {assignments?.map((assignment, index) => (
-                            <li
-                                key={index.toString()}
-                                className={styles.listItem}
-                            >
-                                <p className={styles.numberList}>
-                                    {assignment.id + 1}
-                                </p>
-                                <p
-                                    className={`${styles.jobRequirements} ${themeClass}`}
+                    {assignments ?
+                        <ol className={styles.assignmentsList}>
+                            {assignments?.map((assignment, index) => (
+                                <li
+                                    key={index.toString()}
+                                    className={styles.listItem}
                                 >
-                                    {assignment.description}
-                                </p>
-                            </li>
-                        ))} */}
-                    </ol>
+                                    <p className={styles.numberList}>
+                                        {index + 1}
+                                    </p>
+                                    <p
+                                        className={`${styles.jobRequirements} ${themeClass}`}
+                                    >
+                                        {assignment.description}
+                                    </p>
+                                </li>
+                            ))}
+                        </ol> : <></>}
                 </div>
             </main>
             <footer className={`${styles.applyButtonContainer} ${themeClass}`}>

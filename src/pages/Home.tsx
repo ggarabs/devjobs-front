@@ -9,7 +9,6 @@ const Home: React.FC = () => {
     const { jobs, isLoading } = useJobData();
 
     if (isLoading) {
-        console.log("Carregando");
         return <h1>TÁ CARREGANDO AINDA</h1>
     }
 

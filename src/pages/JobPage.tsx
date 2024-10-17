@@ -13,7 +13,6 @@ const JobPage: React.FC = () => {
     const { jobId } = useParams();
 
     if (isLoading) {
-        console.log("Carregando");
         return <h1>TÁ CARREGANDO AINDA</h1>
     }
 

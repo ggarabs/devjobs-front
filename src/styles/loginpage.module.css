@@ -1,0 +1,113 @@
+.mainPage {
+    background-image: url("/backgroundImg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+}
+
+.loginForm {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    width: 30vw;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    gap: 1.2rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 100px 10px rgba(255, 255, 255, 0.2);
+}
+
+.loginTitle {
+    font-size: 2.5rem;
+    font-weight: 750;
+    letter-spacing: 2px;
+}
+
+.emailSection {
+    width: 80%;
+    margin: 1rem 0 0.7rem 0;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 0 15px 0 20px;
+}
+
+.input {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.icon {
+    height: 1.5rem;
+}
+
+.errorMsg {
+    color: rgb(168, 0, 0);
+}
+
+.passwordSection {
+    width: 80%;
+}
+
+.checkbox {
+    background-color: white;
+    height: 1rem;
+}
+
+.forgotPasswordContainer {
+    justify-self: flex-end;
+    min-width: 133px;
+}
+
+.submitButton {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: white;
+    width: 80%;
+    height: 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.linksSection {
+    display: flex;
+    width: 80%;
+    margin-bottom: 0.9rem;
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.labelCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.checkbox {
+    width: 1rem;
+    border-radius: 5px;
+}
+
+.pre {
+    color: white;
+}

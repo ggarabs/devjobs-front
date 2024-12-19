@@ -1,15 +1,15 @@
-import styles from "./button.module.css"
+import styles from "./button.module.css";
 
 interface ButtonProps {
-    text: string
+  text: string;
 }
 
 const Button = ({ text }: ButtonProps) => {
-    return (
-        <button className={styles.button}>
-            {text}
-        </button>
-    )
-}
+  return (
+    <button type="submit" className={styles.button}>
+      {text}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

@@ -9,9 +9,10 @@ import useRegister from "../hooks/useRegister";
 const registerSchema = z.object({
   username: z.string(),
   password: z.string(),
+  role: z.string(),
 });
 
-type RegisterFormInputs = z.infer<typeof registerSchema>;
+export type RegisterFormInputs = z.infer<typeof registerSchema>;
 
 const RegisterPage: React.FC = () => {
   const {
@@ -58,6 +59,21 @@ const RegisterPage: React.FC = () => {
               className={styles.input}
               type="password"
             />
+          </div>
+        </section>
+        <section className={styles.rolesSection}>
+          <div className={styles.inputSelectContainer}>
+            <select className={styles.inputSelect} {...register("role")}>
+              <option value="" disabled>
+                Select a Role
+              </option>
+              <option className={styles.options} value="ROLE_RECRUITER">
+                Recruiter
+              </option>
+              <option className={styles.options} value="ROLE_CANDIDATE">
+                Candidate
+              </option>
+            </select>
           </div>
         </section>
 

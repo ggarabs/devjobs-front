@@ -16,8 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 67vh;
-  max-height: 32rem;
+  height: 85vh;
+  max-height: 33rem;
   width: 30vw;
   padding: 1.5rem 0;
   border-radius: 1rem;
@@ -69,6 +69,32 @@
 .confirmPasswordSection {
   margin: 0rem 0 0.5rem 0;
   width: 80%;
+}
+
+.rolesSection {
+  margin: 0rem 0 0.5rem 0;
+  width: 80%;
+}
+
+.inputSelectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 0 15px 0 20px;
+}
+
+.inputSelect {
+  width: 100%;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.568);
+}
+
+.options {
+  height: 100px;
 }
 
 .checkbox {

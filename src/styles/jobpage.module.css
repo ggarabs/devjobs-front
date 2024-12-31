@@ -1,256 +1,255 @@
 .headerContainer {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100vw;
-    height: 364px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 364px;
 }
 
 .companyCardContainer {
-    width: 100%;
-    max-width: 400px;
-    top: 25%;
-    position: absolute;
+  width: 100%;
+  max-width: 400px;
+  top: 25%;
+  position: absolute;
 }
 
 .card {
-    align-self: flex-end;
-    padding: 2.5rem 1.5rem;
-    background-color: #fff;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 1rem 7% 4rem 7%;
+  align-self: flex-end;
+  padding: 2.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 7% 4rem 7%;
 }
 
 .generalInfo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .jobMainInformation {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .jobInformation {
-    width: 9.37rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1rem;
-    color: #6e8098;
+  width: 9.37rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #6e8098;
 }
 
 .publicationTime {
-    width: 3.85rem;
+  width: 3.85rem;
 }
 
 .jobModeContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5.25rem;
 }
 
 .jobTitle {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .jobLocation {
-    font-size: 14px;
-    font-weight: bold;
-    color: #5964e0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5964e0;
 }
 
 .cardButton {
-    margin-top: 50px;
-    width: 100%;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .jobDescription {
-    display: flex;
-    margin-top: 2rem;
-    color: #6e8098;
-    line-height: 26px;
+  display: flex;
+  margin-top: 2rem;
+  color: #6e8098;
+  line-height: 26px;
 }
 
 .jobDescription.dark-mode {
-    color: #9daec2;
+  color: #9daec2;
 }
 
 .requirementsSection {
-    margin-top: 66px;
+  margin-top: 66px;
 }
 
 .mainRequirementsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .jobRequirements {
-    display: flex;
-    color: #6e8098;
-    line-height: 26px;
+  display: flex;
+  color: #6e8098;
+  line-height: 26px;
 }
 
 .jobRequirements.dark-mode {
-    color: #9daec2;
+  color: #9daec2;
 }
 
 .requirementsList {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    list-style: none;
-    color: #6e8098;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  list-style: none;
+  color: #6e8098;
+  gap: 0.5rem;
 }
 
 .listItem {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .listItemPoint {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .assignmentsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 40px;
 }
 
 .mainAssignmentsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 }
 
 .numberList {
-    font-weight: bold;
-    padding-top: 4px;
-    color: #5964e0;
-    min-width: 11px;
-    font-size: 1rem;
+  font-weight: bold;
+  padding-top: 4px;
+  color: #5964e0;
+  min-width: 11px;
+  font-size: 1rem;
 }
 
 .applyButtonContainer {
-    display: flex;
-    justify-content: center;
-    border-radius: 6px;
-    height: 96px;
-    padding-left: 7%;
-    padding-right: 7%;
-    width: 100%;
-    background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  height: 96px;
+  padding-left: 7%;
+  padding-right: 7%;
+  width: 100%;
+  background-color: #fff;
 }
 
 .footerJobContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footerJobDescription {
-    display: none;
+  display: none;
 }
 
 .footerJobTitle {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .footerCompanyName {
-    color: #6E8098;
-    font-size: 1rem;
+  color: #6e8098;
+  font-size: 1rem;
 }
 
 .footerCompanyName.dark-mode {
-    color: #9daec2;
+  color: #9daec2;
 }
 
 .footerButtonContainer {
-    display: flex;
-    width: 100%;
-    max-width: 400px;
+  display: flex;
+  width: 100%;
+  max-width: 400px;
 }
 
 .dark-mode {
-    background-color: #19202d;
+  background-color: #19202d;
 }
 
 @media (width >=530px) {
-    .headerContainer {
-        height: 292px;
-    }
+  .headerContainer {
+    height: 292px;
+  }
 
-    .companyCardContainer {
-        max-width: 918px;
-    }
+  .companyCardContainer {
+    max-width: 918px;
+  }
 
-    .generalInfo {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .generalInfo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .jobMainInformation {
-        width: 100%;
-    }
+  .jobMainInformation {
+    width: 100%;
+  }
 
-    .jobTitle {
-        font-size: clamp(20px, 3.4vw, 28px);
-    }
+  .jobTitle {
+    font-size: clamp(20px, 3.4vw, 28px);
+  }
 
-    .cardButton {
-        margin: 0;
-        max-width: 142px;
-    }
+  .cardButton {
+    margin: 0;
+    max-width: 142px;
+  }
 
-    .card {
-        margin-top: 0;
-    }
+  .card {
+    margin-top: 0;
+  }
 
-    .companyCardContainer {
-        width: 100%;
-        top: 40%;
-    }
+  .companyCardContainer {
+    width: 100%;
+    top: 40%;
+  }
 
-    .footerJobDescription {
-        display: flex;
-        flex-direction: column;
-        height: 51px;
-        gap: 7px;
-    }
+  .footerJobDescription {
+    display: flex;
+    flex-direction: column;
+    height: 51px;
+    gap: 7px;
+  }
 
-    .footerButtonContainer {
-        max-width: 142px;
-    }
-
+  .footerButtonContainer {
+    max-width: 142px;
+  }
 }
 
 @media (width >=750px) {
-    .card {
-        padding: 2.5rem 3rem;
-    }
+  .card {
+    padding: 2.5rem 3rem;
+  }
 }
 
 @media (width >=900px) {
-    .card {
-        width: 100%;
-        max-width: 790px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .card {
+    width: 100%;
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .footerJobContainer {
-        width: 790px;
-    }
+  .footerJobContainer {
+    width: 790px;
+  }
 }
